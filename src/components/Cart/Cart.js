@@ -5,9 +5,11 @@ from './CartItem'; import classes from './Cart.module.css'; import CartContext f
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
   const hasItems = cartCtx.items.length > 0;
   const cartItemRemoveHandler = (id) => {
-    cartCtx.removeItem(id);
+//added   
+ cartCtx.removeItem(id);
   };
   const cartItemAddHandler = (item) => {
+//added
     cartCtx.addItem({ ...item, amount: 1 });
   };
   const cartItems = (
